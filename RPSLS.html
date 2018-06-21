@@ -16,36 +16,39 @@
 </head>
 <body>
 
-    <div class="jumbotron">
-        <h1 class="display-4">Rock, Paper, Scissors, Lizard, Spock!</h1>
-        <p class="lead">Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.</p>
-        <hr class="my-4">
-        <p>Choose carefully</p>
-        <button id = "0" class="btn btn-primary btn-lg" href="#" onclick="compare(0)"><i class="far fa-hand-rock"></i>&nbsp;Rock</button>
-        <button id = "1" class="btn btn-primary btn-lg" href="#" onclick="compare(1)"><i class="far fa-hand-paper"></i>&nbsp;Paper</button>
-        <button id = "2" class="btn btn-primary btn-lg" href="#" onclick="compare(2)"><i class="far fa-hand-scissors"></i>&nbsp;Scissors</button>
-        <button id = "3" class="btn btn-primary btn-lg" href="#" onclick="compare(3)"><i class="far fa-hand-lizard"></i>&nbsp;Lizard</button>
-        <button id = "4" class="btn btn-primary btn-lg" href="#" onclick="compare(4)"><i class="far fa-hand-spock"></i>&nbsp;Spock</button>
-    </div>
+        <div class="container">
 
-    <div class="container">
-
-        <div class="row mx-1-md">
-
-            <div class="col-md-4 bg-success mr-auto text-black-50 border border-success rounded">
-                <h1>Wins</h1>
-                <h3 id="wins"></h3>
-            </div>
-            <div class="col-md-4 bg-danger mr-auto text-black-50 border border-danger rounded">
-                <h1>Losses</h1>
-                <h3 id="losses"></h3>
-            </div>
-            <div class="col-md-4 bg-secondary mr-auto text-black-50 border border-secondary rounded">
-                <h1>Draws</h1>
-                <h3 id="draws"></h3>
+            <div class="row">
+                <div class="jumbotron">
+                    <h1 class="display-4">Rock, Paper, Scissors, Lizard, Spock!</h1>
+                    <p class="lead">Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.</p>
+                    <hr class="my-4">
+                    <p>Choose carefully</p>
+                    <button id = "0" class="btn btn-primary btn-lg" href="#" onclick="compare(0)"><i class="far fa-hand-rock"></i>&nbsp;Rock</button>
+                    <button id = "1" class="btn btn-primary btn-lg" href="#" onclick="compare(1)"><i class="far fa-hand-paper"></i>&nbsp;Paper</button>
+                    <button id = "2" class="btn btn-primary btn-lg" href="#" onclick="compare(2)"><i class="far fa-hand-scissors"></i>&nbsp;Scissors</button>
+                    <button id = "3" class="btn btn-primary btn-lg" href="#" onclick="compare(3)"><i class="far fa-hand-lizard"></i>&nbsp;Lizard</button>
+                    <button id = "4" class="btn btn-primary btn-lg" href="#" onclick="compare(4)"><i class="far fa-hand-spock"></i>&nbsp;Spock</button>
+                </div>
             </div>
 
-        </div>
+
+            <div class="row mx-1-md">
+
+                <div class="col-md-4 bg-success mr-auto text-black-50 border border-success rounded">
+                    <h1>Wins</h1>
+                    <h3 id="wins"></h3>
+                </div>
+                <div class="col-md-4 bg-danger mr-auto text-black-50 border border-danger rounded">
+                    <h1>Losses</h1>
+                    <h3 id="losses"></h3>
+                </div>
+                <div class="col-md-4 bg-secondary mr-auto text-black-50 border border-secondary rounded">
+                    <h1>Draws</h1>
+                    <h3 id="draws"></h3>
+                </div>
+
+            </div>
 
     </div>
 
