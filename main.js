@@ -113,7 +113,39 @@ function compare(elem_id) {
         winLoseDraw = "Lose";
         losses ++;
     }
-    
+
+    if (userChoice == 0){
+        userChoice = "Rock";
+    }
+    else if (userChoice == 1){
+        userChoice = "Paper";
+    }
+    else if (userChoice == 2){
+        userChoice = "Scissors";
+    }
+    else if (userChoice == 3){
+        userChoice = "Lizard";
+    }
+    else if (userChoice == 4){
+        userChoice = "Spock";
+    }    
+
+    if (compChoice == 0){
+        compChoice = "Rock";
+    }
+    else if (compChoice == 1){
+        compChoice = "Paper";
+    }
+    else if (compChoice == 2){
+        compChoice = "Scissors";
+    }
+    else if (compChoice == 3){
+        compChoice = "Lizard";
+    }
+    else if (compChoice == 4){
+        compChoice = "Spock";
+    }
+
     alert("You " + winLoseDraw + "\n" + "You chose: " + userChoice + "\n" + "Computer chose: " + compChoice);
 
     document.getElementById("wins").innerHTML = wins;
