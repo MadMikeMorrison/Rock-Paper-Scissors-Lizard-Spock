@@ -35,18 +35,29 @@
 
             <div class="row">
 
-                <div class="col-md-4 bg-success mr-auto text-black-50 border border-success rounded">
-                    <h1>Wins</h1>
-                    <h3 id="wins"></h3>
-                </div>
-                <div class="col-md-4 bg-danger mr-auto text-black-50 border border-danger rounded">
-                    <h1>Losses</h1>
-                    <h3 id="losses"></h3>
-                </div>
-                <div class="col-md-4 bg-secondary mr-auto text-black-50 border border-secondary rounded">
-                    <h1>Draws</h1>
-                    <h3 id="draws"></h3>
-                </div>
+                    <div class="col-md-4">
+                        <div class="card bg-success">
+                            <div class="card-header">Wins</div>
+                            <!-- using an ID here so we can hook to it in Javascriot to change as the rounds progress -->
+                            <h3 id="wins" class="text-center">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card bg-danger">
+                            <div class="card-header">Wins</div>
+                            <!-- using an ID here so we can hook to it in Javascriot to change as the rounds progress -->
+                            <h3 id="wins" class="text-center">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card bg-secondary">
+                            <div class="card-header">Wins</div>
+                            <!-- using an ID here so we can hook to it in Javascriot to change as the rounds progress -->
+                            <h3 id="wins" class="text-center">0</h3>
+                        </div>
+                    </div>
 
             </div>
 
