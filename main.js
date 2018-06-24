@@ -14,6 +14,50 @@ document.getElementById("wins").innerHTML = wins;
 document.getElementById("losses").innerHTML = losses;
 document.getElementById("draws").innerHTML = draws;
 
+// you can use a two dimmensional array, too, like this
+var winLoseOrDraw = [[]];
+winLoseOrDraw[0][1] = "Lose";
+winLoseOrDraw[0][2] = "Win";
+winLoseOrDraw[0][3] = "Win";
+winLoseOrDraw[0][4] = "Lose";
+
+winLoseOrDraw[1][1] = "Win";
+winLoseOrDraw[1][21] = "Lose";
+winLoseOrDraw[1][3] = "Lose";
+winLoseOrDraw[1][4] = "Win";
+//..etc.
+
+//something like this....this code hasn't been tested.....
+function compare(elem_id) {
+
+    var userChoice = elem_id;
+    var compChoice = getRandomInt(5);
+    var winLoseDraw = "";
+    
+    // then you can get your result by accessing the array loike this
+    var results = winLoseOrDraw[userChoice][compChoice];
+
+    // if a draw set results = "draw"
+
+    //to track score you could use a switch
+    switch(results)
+    {
+        case "Lose":
+            losses++;
+            break;
+
+        case "Win":
+            wins++;
+            break;
+
+        //etc.
+
+        case "draw":
+            draws++
+            break;
+    }
+}
+
 function compare(elem_id) {
 
     var userChoice = elem_id;
